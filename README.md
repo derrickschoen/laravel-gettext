@@ -1,4 +1,4 @@
-!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
 
 The original repository is not mantained anymore.
 
@@ -12,7 +12,7 @@ The new packagist package:
 composer require nekhbet/laravel-gettext
 ```
 
-!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!
 
 
 -------------------------
