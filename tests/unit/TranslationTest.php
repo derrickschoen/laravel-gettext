@@ -8,12 +8,12 @@
 
 namespace unit;
 
-use Xinax\LaravelGettext\Adapters\LaravelAdapter;
-use Xinax\LaravelGettext\Config\ConfigManager;
-use Xinax\LaravelGettext\FileSystem;
-use Xinax\LaravelGettext\Storages\MemoryStorage;
-use Xinax\LaravelGettext\Testing\BaseTestCase;
-use Xinax\LaravelGettext\Translators\Symfony;
+use Nekhbet\LaravelGettext\Adapters\LaravelAdapter;
+use Nekhbet\LaravelGettext\Config\ConfigManager;
+use Nekhbet\LaravelGettext\FileSystem;
+use Nekhbet\LaravelGettext\Storages\MemoryStorage;
+use Nekhbet\LaravelGettext\Testing\BaseTestCase;
+use Nekhbet\LaravelGettext\Translators\Symfony;
 
 class TranslationTest extends BaseTestCase
 {

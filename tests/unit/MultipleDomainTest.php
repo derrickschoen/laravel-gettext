@@ -2,11 +2,11 @@
 
 use \Mockery as m;
 
-use Xinax\LaravelGettext\Testing\BaseTestCase;
-use Xinax\LaravelGettext\Config\ConfigManager;
-use Xinax\LaravelGettext\Adapters\LaravelAdapter;
-use Xinax\LaravelGettext\FileSystem;
-use Xinax\LaravelGettext\Translators\Symfony;
+use Nekhbet\LaravelGettext\Testing\BaseTestCase;
+use Nekhbet\LaravelGettext\Config\ConfigManager;
+use Nekhbet\LaravelGettext\Adapters\LaravelAdapter;
+use Nekhbet\LaravelGettext\FileSystem;
+use Nekhbet\LaravelGettext\Translators\Symfony;
 
 /**
  * Created by PhpStorm.

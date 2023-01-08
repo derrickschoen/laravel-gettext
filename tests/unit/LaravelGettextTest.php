@@ -2,14 +2,14 @@
 
 use \Mockery as m;
 
-use Xinax\LaravelGettext\Adapters\AdapterInterface;
-use Xinax\LaravelGettext\Storages\MemoryStorage;
-use Xinax\LaravelGettext\Testing\Adapter\TestAdapter;
-use Xinax\LaravelGettext\Testing\BaseTestCase;
-use Xinax\LaravelGettext\Config\ConfigManager;
-use Xinax\LaravelGettext\Adapters\LaravelAdapter;
-use Xinax\LaravelGettext\FileSystem;
-use Xinax\LaravelGettext\Translators\Symfony;
+use Nekhbet\LaravelGettext\Adapters\AdapterInterface;
+use Nekhbet\LaravelGettext\Storages\MemoryStorage;
+use Nekhbet\LaravelGettext\Testing\Adapter\TestAdapter;
+use Nekhbet\LaravelGettext\Testing\BaseTestCase;
+use Nekhbet\LaravelGettext\Config\ConfigManager;
+use Nekhbet\LaravelGettext\Adapters\LaravelAdapter;
+use Nekhbet\LaravelGettext\FileSystem;
+use Nekhbet\LaravelGettext\Translators\Symfony;
 
 class LaravelGettextTest extends BaseTestCase
 {
@@ -99,7 +99,7 @@ class LaravelGettextTest extends BaseTestCase
     {
         $response = $this->translator->setEncoding('UTF-8');
         $this->assertNotEmpty($response);
-        $this->assertInstanceOf('Xinax\LaravelGettext\Translators\Symfony', $response);
+        $this->assertInstanceOf('Nekhbet\LaravelGettext\Translators\Symfony', $response);
     }
 
     protected function tearDown(): void
