@@ -217,7 +217,7 @@ class FileSystem
      */
     protected function createDirectory($path)
     {
-        if (!file_exists($path) && !mkdir($path)) {
+        if (!file_exists($path) && !mkdir($path, recursive: true)) {
             throw new FileCreationException(
                 sprintf('Can\'t create the directory: %s', $path)
             );
