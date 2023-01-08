@@ -6,6 +6,12 @@ I updated it to work with PHP 8.x and Laravel 9.x and will maintain it for my ow
 
 Use it on your own risk! I already fixed few bugs!
 
+The new packagist package: 
+
+```bash
+composer require nekhbet/laravel-gettext
+```
+
 !!!!!!!!!!!!!!!!!!!!!!!
 
 
