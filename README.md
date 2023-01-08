@@ -6,6 +6,8 @@ I updated it to work with PHP 8.x and Laravel 9.x and will maintain it for my ow
 
 Use it on your own risk!
 
+PS: Be sure you have "resources/lang/i18n" folder structure before running gettext:create 
+
 !!!!!!!!!!!!!!!!!!!!!!!
 
 
