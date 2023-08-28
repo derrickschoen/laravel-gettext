@@ -11,7 +11,7 @@ return [
      *
      * - gettext: requires the php-gettext module installed. This handler has well-known cache issues
      */
-    'handler' => 'symfony',
+    'handler'            => 'symfony',
 
     /**
      * Session identifier: Key under which the current locale will be stored.
@@ -22,19 +22,19 @@ return [
      * Default locale: this will be the default for your application.
      * Is to be supposed that all strings are written in this language.
      */
-    'locale' => 'en_US',
+    'locale'             => env('GETTEXT_LOCALE_DEFAULT', 'en_US'),
 
     /**
      * Supported locales: An array containing all allowed languages
      */
-    'supported-locales' => [
+    'supported-locales'  => [
         'en_US',
     ],
 
     /**
      * Default charset encoding.
      */
-    'encoding' => 'UTF-8',
+    'encoding'           => env('GETTEXT_ENCODING', 'UTF-8'),
 
     /**
      * -----------------------------------------------------------------------
@@ -46,39 +46,39 @@ return [
     /**
      * Locale categories to set
      */
-    'categories' => [
+    'categories'         => [
         'LC_ALL',
     ],
 
     /**
      * Base translation directory path (don't use trailing slash)
      */
-    'translations-path' => '../resources/lang',
+    'translations-path'  => '../resources/lang',
 
     /**
      * Relative path to the app folder: is used on .po header files
      */
-    'relative-path' => '../../../../../app',
+    'relative-path'      => '../../../../../app',
 
     /**
      * Fallback locale: When default locale is not available
      */
-    'fallback-locale' => 'en_US',
+    'fallback-locale'    => 'en_US',
 
     /**
      * Default domain used for translations: It is the file name for .po and .mo files
      */
-    'domain' => 'messages',
+    'domain'             => 'messages',
 
     /**
      * Project name: is used on .po header files
      */
-    'project' => 'MultilanguageLaravelApplication',
+    'project'            => 'MultilanguageLaravelApplication',
 
     /**
      * Translator contact data (used on .po headers too)
      */
-    'translator' => 'James Translator <james@translations.colm>',
+    'translator'         => 'James Translator <james@translations.colm>',
 
     /**
      * Paths where Poedit will search recursively for strings to translate.
@@ -86,7 +86,7 @@ return [
      *
      * Remember to call artisan gettext:update after change this.
      */
-    'source-paths' => [
+    'source-paths'       => [
         'Http',
         '../resources/views',
         'Console',
@@ -120,12 +120,12 @@ return [
      * Sync laravel: A flag that determines if the laravel built-in locale must
      * be changed when you call LaravelGettext::setLocale.
      */
-    'sync-laravel' => true,
+    'sync-laravel'       => true,
 
     /**
      * The adapter used to sync the laravel built-in locale
      */
-    'adapter' => \Nekhbet\LaravelGettext\Adapters\LaravelAdapter::class,
+    'adapter'            => \Nekhbet\LaravelGettext\Adapters\LaravelAdapter::class,
 
     /**
      * Where to store the current locale/domain
@@ -135,12 +135,12 @@ return [
      *
      * @see \Nekhbet\LaravelGettext\Storages\Storage
      */
-    'storage' => \Nekhbet\LaravelGettext\Storages\SessionStorage::class,
+    'storage'            => \Nekhbet\LaravelGettext\Storages\SessionStorage::class,
 
     /**
      * Use custom locale that is not supported by the system
      */
-    'custom-locale' => false,
+    'custom-locale'      => false,
 
     /**
      * The keywords list used by poedit to search the strings to be translated
@@ -151,5 +151,5 @@ return [
      *
      * "__" and "_n" and "_i" and "_s" are helpers functions @see \Nekhbet\LaravelGettext\Support\helpers.php
      */
-    'keywords-list' => ['_', '__', '_i', '_s', 'gettext', '_n:1,2', 'ngettext:1,2', 'dgettext:2'],
+    'keywords-list'      => ['_', '__', '_i', '_s', 'gettext', '_n:1,2', 'ngettext:1,2', 'dgettext:2'],
 ];
