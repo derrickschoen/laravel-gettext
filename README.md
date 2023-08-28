@@ -2,7 +2,7 @@
 
 The original repository is not mantained anymore.
 
-I updated it to work with PHP 8.x and Laravel 9.x and will maintain it for my own projects. 
+I updated it to work with PHP 8.x and Laravel 9.x/10.x and will maintain it for my own projects. 
 
 Use it on your own risk! I already fixed few bugs!
 
